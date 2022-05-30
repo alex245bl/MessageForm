@@ -1,0 +1,171 @@
+html
+{
+  background: #eeeeee;
+}
+.row
+{
+
+  display:flex;
+}
+.field 
+{
+    display: inline-flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.bar
+{
+  color:white;
+  padding: 6px;
+  padding-left: 30px;
+  font-size: 25px;
+  position: relative;
+  width: 485px;
+  height: 44px;
+  margin-left: -64px;
+  margin-bottom: 25px;
+  background-color: #b02500;
+  box-shadow: 0.4em 0.4em 5px rgba(122,122,122,0.5);
+
+}
+.bar:before
+{
+  content: " ";
+  position: absolute;
+  top: 44px;
+  right: 469px;
+  width: 16px;
+  height: 10px;
+  background: linear-gradient(to left bottom, transparent 50%, rgb(114, 6, 10) 0) 100% 0 no-repeat;
+  transform: rotate(180deg)
+}
+.bar::after
+{
+  content: " ";
+  position: absolute;
+  top: -33px;
+  right: -30px;
+  width: 101px;
+  height: 83px;
+  background: linear-gradient(to left bottom, transparent 50%, #f8f8f8 0) 100% 0 no-repeat;
+  transform: rotate(270deg)
+}
+.barshadow
+{
+  content: " ";
+  position: relative;
+  top: -75px;
+  right: -333.8px;
+  width: 81px;
+  height: 36px;
+  background: linear-gradient(to left bottom, transparent 100%, blue 0) 100% 0 no-repeat;
+  transform: rotate(310deg);
+  box-shadow: 0.4em 0.4em 5px rgba(122,122,122,0.5);
+}
+
+.barshadow::after
+{
+  content: " ";
+  position: absolute;
+  top: -8px;
+  right: -32px;
+  width: 118px;
+  height: 48px;
+  background: linear-gradient(to left bottom, transparent 50%,#f8f8f8 0) 100% 0 no-repeat;
+  transform: rotate(208deg)
+}
+
+
+.leftpanel
+{
+    font-size:17px;
+}
+
+.container
+{
+    padding: 3em;
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #f8f8f8;
+    border: 1px solid black;
+    border-radius: 7px;
+    box-shadow: rgba(0,0,0,0.2) 2px 2px 3px;
+    transition: visibility 0s linear 0.3s linear 0s;
+}
+.input-field
+{
+  
+  background-repeat: no-repeat;
+  background-position: 3px;
+  border-top: 2px #000000 solid;
+  border-left: 2px #000000 solid;
+  border-right: 2px #777777 solid;
+  border-bottom: 2px #777777 solid;
+  border-radius: 5px;
+  width: 70%;
+  height: 30px;
+} 
+.my-button button
+{
+  margin-top: 18px;
+  width: 158px;
+  border-radius: 6px;
+}
+.my-button
+{
+  text-align: center;
+}
+
+.icon-mail
+{
+  background-image: url(Images/mail.svg);
+  padding-left: 30px;
+  background-size: 20px;
+}
+.icon-name
+{
+  background-image: url(Images/user.svg);
+  padding-left: 30px;
+  background-position: 0px;
+  background-size: 25px;
+}
+.icon-phone
+{
+  background-image: url(Images/phone.svg);
+  padding-left: 30px;
+  background-size: 20px;
+}
+.text-field
+{
+  width: 30%;
+  font-weight: 700;
+}
+
+.message-field
+{
+  min-height: 80px;
+  resize: none;
+}
+
+input {
+    height: 20px;
+  }
+  
+  i.fa-solid {
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    margin-right: -26px;
+    position: relative;
+    z-index: 1;
+
+  }
+  
+  i.fa-solid  + input {
+    padding-left: 26px;
+  }
+
+  
